@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: "https://www.splitshire.com/wp-content/uploads/2014/05/SplitShire_IMG_77407-1800x1200-uai-1800x1012.jpg";
+}
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+.input-field, .select-field {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #00f7ff;
+}

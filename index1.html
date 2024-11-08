@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">:
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <input type="text" id="username" class="input-field" placeholder="Username">
+        <input type="password" id="password" class="input-field" placeholder="Password">
+        <button class="button" onclick="validateLogin()">Login</button>
+        <div id="error-message" class="error-message"></div>
+    </div>
+
+    <script>
+        function validateLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-messagse');
+            const validUsername = 'Anant';
+            const validPassword = '123456';
+
+            if (username === validUsername && password === validPassword) {
+                window.location.href = 'curr.html';
+            } else {
+                errorMessage.textContent = 'Login failed';
+            }
+        }
+    </script>
+</body>
+</html>
